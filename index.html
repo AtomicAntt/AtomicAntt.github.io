@@ -3,12 +3,226 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
         <title>Example Website</title>
-    </head>
 
-    <body>
-        <h1>Hello World!</h1>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: #121212;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .card-hover-border {
+                transition: border 0.3s ease, box-shadow 0.3s ease;
+                border: 2px solid transparent;
+            }
+
+            .card-hover-border:hover {
+                border-color: #0d6efd;
+                box-shadow: 0 0 15px rgba(13, 110, 253, 0.4);
+            }
+        </style>
+
+    </head>
+    <body class="text-light">
+        <!-- THE NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark nav-underline">
+            <div class="container">
+                <!-- The Navbar Brand (Home) -->
+                <a href="#" class="navbar-brand">
+                    <div class="fs-3 fw-bold">Anthony Chieng</div>
+                    <div class="text-secondary" style="font-size: 0.85rem;">Game Developer</div>
+                </a>
+
+
+                <!-- The Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- The Nav Menu -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto d-flex flex-row align-items-center gap-3">
+                        <li>
+                            <a href="https://github.com/AtomicAntt" target="_blank" class="nav-link" title="View my GitHub">
+                                <i class="fab fa-github fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anthonychieng/" target="_blank" class="nav-link" title="View my LinkedIn">
+                                <i class="fab fa-linkedin fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://atomicant.itch.io/" target="_blank" class="nav-link" title="View my itch.io page">
+                                <i class="fab fa-itch-io fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resume.pdf" target="_blank" class="nav-link fs-4 fw-semibold" title="View my resume">
+                                Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- ABOUT ME SECTION -->
+        <section id="about" class="p-5">
+            <div class="container">
+                <div class="row text-center">
+
+                    <div class="col-md">
+                        <h1>About Me</h1>
+                        <i class="bi bi-person-raised-hand fs-1"></i>
+                    </div>
+
+                    <div class="col-md fs-5">
+                        <p>Hello! I'm Anthony Chieng, a game developer!</p>
+                        <p>I recently graduated from California State University, Los Angeles with a Bachelor of Science in Computer Science!</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CARDS (Projects) -->
+         <section class="py-5">
+            <div class="container">
+                <div class="row g-5">
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="VRPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    VR Space Game
+                                </h3>
+                                <p class="card-text">
+                                    Solo developer of an interactive VR experience where you use a fire extinguisher to propel yourself and extinguish dangerous fires!
+                                    <br>
+                                    <br>
+                                    Made with Unity (C#) and the XR Interaction Toolkit.
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="TornadoHunterPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    Tornado Hunter
+                                </h3>
+                                <p class="card-text">
+                                    Submission to Boss Rush Jam 2025 where you collect, upgrade, and whirl weapons to defeat various bosses, each driven by modular state machines.
+                                    <br>
+                                    <br>
+                                    Made with Godot (GDScript); ranked #48 overall out of 866 entries!
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="BlazingBeatzPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    Blazing Beatz
+                                </h3>
+                                <p class="card-text">
+                                    Gameplay programmer working with three musicians and an artist to create a game for Rhythm Jam 2024, where players dodge beat-synced projectiles.
+                                    <br>
+                                    <br>
+                                    Made with Godot (C#); ranked #17 overall out of 71 entries!
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="CodeLaserPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    Code: Laser
+                                </h3>
+                                <p class="card-text">
+                                    Gameplay programmer for a game submission to Goedware Jam #10 where you shoot a consequential laser to destroy enemies with various AI behaviors.
+                                    <br>
+                                    <br>
+                                    Made with Godot (C#); ranked #3 overall out of 40 entries! 
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="CureTheShadowPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    Cure The Shadow
+                                </h3>
+                                <p class="card-text">
+                                    Solo developer for a unique story based platformer game where the player avoids light sources and hide under shadows.
+                                    <br>
+                                    <br>
+                                    Made with Godot (GDScript).
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="col-md-6 d-flex">
+                        <a href="#" class="card bg-dark text-light card-hover-border text-decoration-none">
+                            <video autoplay loop muted playsinline class="card-img-top img-fluid">
+                                <source src="DungeonAssemblyPortfolio.mp4" type="video/mp4">
+                            </video>
+                            <div class="card-body">
+                                <h3 class="card-title mb-3">
+                                    Dungeon Assembly
+                                </h3>
+                                <p class="card-text">
+                                    Submission to Godot Wild Jam #53 (2023). Developed a puzzle platformer where players must assemble platforms to navigate and complete each level.
+                                    <br>
+                                    <br>
+                                    Made with Godot (GDScript); ranked #21 out of 175 entries!
+                                </p>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
     </body>
-        
 </html>
