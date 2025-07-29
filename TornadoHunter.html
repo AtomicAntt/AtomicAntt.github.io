@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anthony's Portfolio</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
+
+        <style>
+            body{
+                background-color: #121212;
+                font-family: 'Raleway', sans-serif;
+            }
+
+            .project-header {
+                border-bottom: 1px solid #333;
+            }
+
+            .project-video {
+                width: 100%;
+                max-width: 640px;
+                aspect-ratio: 16 / 9;
+                object-fit: contain;
+                border-radius: 10px;
+                box-shadow: 0 0 15px rgba(13, 110, 253, 0.3);
+                display: block;
+                margin: 0 auto; 
+            }
+        </style>
+
+    </head>
+    <body class="text-light">
+        <!-- This was made by me using simple html, css, and bootstrap-->
+
+        <!-- THE NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark nav-underline">
+            <div class="container">
+                <!-- The Navbar Brand (Home) -->
+                <a href="index.html" class="navbar-brand">
+                    <div class="fs-3 fw-bold">Anthony Chieng</div>
+                    <div class="text-secondary" style="font-size: 0.85rem;">Game Programmer</div>
+                </a>
+
+
+                <!-- The Hamburger Menu -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- The Nav Menu -->
+                <div class="collapse navbar-collapse" id="navmenu">
+                    <ul class="navbar-nav ms-auto d-flex flex-row align-items-center gap-3">
+                        <li>
+                            <a href="https://github.com/AtomicAntt" target="_blank" class="nav-link" title="View my GitHub">
+                                <i class="fab fa-github fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/anthonychieng/" target="_blank" class="nav-link" title="View my LinkedIn">
+                                <i class="fab fa-linkedin fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://atomicant.itch.io/" target="_blank" class="nav-link" title="View my itch.io page">
+                                <i class="fab fa-itch-io fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="resume.pdf" target="_blank" class="nav-link fs-4 fw-semibold" title="View my resume">
+                                Resume
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- PROJECT CONTENT -->
+        <section class="p-4">
+            <div class="container">
+                <!-- Back Button Above Title -->
+                <div class="mb-4">
+                    <a href="index.html" class="btn btn-outline-light">
+                        <i class="fas fa-arrow-left me-2"></i>Back to Portfolio
+                    </a>
+                </div>
+
+                <div class="project-header mb-4">
+                    <h1 class="display-5">Tornado Hunter</h1>
+                    <p class="text-secondary">Created with Godot — Ranked #48 at Boss Rush Jam 2025</p>
+                </div>
+
+                <div class="text-center mb-4">
+                    <video class="project-video" autoplay loop muted playsinline>
+                        <source src="TornadoHunterPortfolio.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="fs-5">
+                    <p>
+                        This game was created as a submission to Boss Rush Jam 2025, featuring a boss rush game where you collect and whirl your weapons to defeat each boss. The theme of the game jam was: "Spin".
+                    </p>
+                    <p>
+                        I was a solo developer for this submission, using the Godot Engine.
+                    </p>
+                    <p>
+                        Additionally, this game won 12th place for fun and 30th place for both boss design and controls. In total, 866 game jam teams participated in this game jam.
+                    </p>
+                    <img src="TornadoHunterRating.png" class="py-3">
+                    <p class="pt-2">
+                        <strong>Game Technical Features:</strong>
+                        <ul>
+                            <li>Rotating item system for the player's main mechanic, which can dynamically add any # of items/shields.</li>
+                            <li>Modular state machines for each boss.</li>
+                            <li>Modular boss drops for each boss.</li>
+                            <li>Screen shake system, with variable amount of screen shake.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        You can find the source code here: <a href="https://github.com/AtomicAntt/TornadoHunter" target="_blank">GitHub</a> 
+                    </p>
+                    <p>
+                        And play the game on the web here: <a href="https://atomicant.itch.io/tornado-hunter" target="_blank">itch.io</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"></script>
+    </body>
+</html>
